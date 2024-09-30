@@ -36,19 +36,19 @@ on:
       LOCAL_MANIFEST:
         description: "Personal local manifest [repository or raw]:"
         required: true
-        default: 'https://github.com/sounddrill31/local_manifests_oxygen'
+        default: 'https://github.com/FreakyFriday12/Local-Manifest'
       LOCAL_MANIFEST_BRANCH:
         description: "Personal local manifest's branch:"
         required: false
-        default: 'lineage-21-qpr3'
+        default: 'Voltage-14'
       DEVICE_NAME:
         description: "Device's codename:"
         required: true
-        default: "oxygen"
+        default: "earth"
       PRODUCT_NAME:
         description: "Product to build:"
         required: true
-        default: "oxygen"
+        default: "earth"
       BUILD_COMMAND:
         description: 'Command to be used for compiling:'
         required: true
@@ -107,10 +107,10 @@ jobs:
           export PROJECTID="36"
           export REPO_INIT="repo init -u https://github.com/accupara/los20.git -b lineage-20.0 --git-lfs --depth=1"
         ;;
-        "CipherOS 15")
-          export PROJECTFOLDER="/crave-devspaces/Cipher15"
+        "CipherOS 14")
+          export PROJECTFOLDER="/crave-devspaces/Cipher14"
           export PROJECTID="79"
-          export REPO_INIT="repo init -u https://github.com/CipherOS/android_manifest.git -b fifteen --git-lfs --depth=1"
+          export REPO_INIT="repo init -u https://github.com/CipherOS/android_manifest.git -b fourteen --git-lfs --depth=1"
         ;;
         "PixelOS 14")
           export PROJECTFOLDER="/crave-devspaces/Pixel14"
